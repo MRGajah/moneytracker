@@ -1,0 +1,42 @@
+.navbar {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  height: 65px;
+  border-top: 0.1px solid #A9B5B3;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      grid-template-areas: "auto auto auto auto";
+  z-index: 99;
+}
+
+.navbar-btn {
+  text-align: center;
+  position: relative;
+  width: 88px;
+  height: 56px;
+  cursor: pointer;
+}
+
+.navbar-btn img {
+  margin: auto;
+  width: 24px;
+  margin-top: 4px;
+}
+
+.navbar-btn p {
+  font-size: 14px;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #A9B5B3;
+}
+/*# sourceMappingURL=navbar.css.map */
