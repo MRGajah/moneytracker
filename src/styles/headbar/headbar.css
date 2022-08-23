@@ -1,0 +1,22 @@
+.headbar {
+  height: 50px;
+  background-color: white;
+  top: 0;
+}
+
+.headbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.headbar p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #423D3D;
+}
+/*# sourceMappingURL=headbar.css.map */
