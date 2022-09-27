@@ -1,0 +1,29 @@
+.items {
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    .icon {
+        border-radius: 4px;
+        width: 32px;
+        height: 32px;
+        background-color: #d9d9d9;
+    }
+    .wallet-title {
+        margin: 0;
+        margin-left: 12px;
+        font-size: 12px;
+    }
+    .amount {
+        order: 2;
+        margin: 0;
+        margin-left: auto;
+        font-size: 12px;
+    }
+}
+.items:hover {
+    background-color: #f0f0f0ad;
+    border-radius: 8px;
+    transition: 0.4s;
+}

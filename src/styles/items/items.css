@@ -1,0 +1,41 @@
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.items .icon {
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  background-color: #d9d9d9;
+}
+
+.items .wallet-title {
+  margin: 0;
+  margin-left: 12px;
+  font-size: 12px;
+}
+
+.items .amount {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin: 0;
+  margin-left: auto;
+  font-size: 12px;
+}
+
+.items:hover {
+  background-color: #f0f0f0ad;
+  border-radius: 8px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+/*# sourceMappingURL=items.css.map */
