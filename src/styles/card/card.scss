@@ -1,3 +1,6 @@
+.link-text {
+    text-decoration: none;
+}
 .card {
     min-height: 60px;
     width: 100%;
@@ -10,6 +13,30 @@
     align-items:center;
     display: inline-flex;
     
+}
+.card-title-box {
+    margin: 4px 0 14px 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    p {
+        margin: 0;
+    }
+    .title {
+        color: #7B7B7B;
+        font-size: 12px;
+    }
+    .link-text {
+        order: 2;
+        margin: 0;
+        margin-left: auto;
+        font-size: 12px;
+        color: #38B9A9;
+        cursor: pointer;
+    }
 }
 .card.context { margin-top: 14px; width: 100%;}
 .context-body {
@@ -66,7 +93,7 @@
         margin: 20px auto 18px auto;
         width: 260px;
         height: auto;
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: rgba(255, 255, 255, 0.2);
         font-size: 12px;
         font-weight: 500;
         color: #fff;

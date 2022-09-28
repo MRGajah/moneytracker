@@ -7,7 +7,12 @@
           align-items: center;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
+  width: 100%;
   cursor: pointer;
+}
+
+.items p {
+  margin: 0;
 }
 
 .items .icon {
@@ -21,6 +26,24 @@
   margin: 0;
   margin-left: 12px;
   font-size: 12px;
+}
+
+.items .transaction-title {
+  margin-left: 12px;
+}
+
+.items .transaction-title .title {
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.items .transaction-title .title span {
+  color: A9B5B3;
+}
+
+.items .transaction-title .date {
+  font-size: 10px;
+  color: #7B7B7B;
 }
 
 .items .amount {
@@ -37,5 +60,41 @@
   border-radius: 8px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+.group {
+  position: relative;
+  width: 104.2%;
+  height: 40px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.items-group {
+  position: absolute;
+  width: 1000px;
+  overflow-x: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.rounded-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+}
+
+.rounded-icon.active {
+  border: 3px solid #FFC107;
+  width: 33px;
+  height: 33px;
 }
 /*# sourceMappingURL=items.css.map */

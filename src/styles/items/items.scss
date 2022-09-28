@@ -3,7 +3,11 @@
     align-items: center;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
+    width: 100%;
     cursor: pointer;
+    p {
+        margin: 0;
+    }
     .icon {
         border-radius: 4px;
         width: 32px;
@@ -14,6 +18,18 @@
         margin: 0;
         margin-left: 12px;
         font-size: 12px;
+    }
+    .transaction-title {
+        margin-left: 12px;
+        .title {
+            margin-bottom: 4px;
+            font-size: 12px;
+            span { color: A9B5B3;}
+        }
+        .date {
+            font-size: 10px;
+            color: #7B7B7B;
+        }
     }
     .amount {
         order: 2;
@@ -26,4 +42,31 @@
     background-color: #f0f0f0ad;
     border-radius: 8px;
     transition: 0.4s;
+}
+.group {
+    position: relative;
+    width: 104.2%;
+    height: 40px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+.items-group {
+    position: absolute;
+    width: 1000px;
+    overflow-x: auto;
+    height: fit-content;
+    display: flex;
+    gap: 8px;
+    box-sizing: content-box;
+}
+.rounded-icon {
+    width: 36px;
+    height: 36px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+}
+.rounded-icon.active {
+    border: 3px solid #FFC107;
+    width: 33px;
+    height: 33px;
 }

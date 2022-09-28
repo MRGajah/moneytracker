@@ -1,0 +1,117 @@
+.income-color {
+  background-color: #B3E4DE;
+}
+
+.expense-color {
+  background-color: #F6D2B2;
+}
+
+.graph-content {
+  font-family: 'Inter', sans-serif;
+  margin-top: 16px;
+}
+
+.graph-content p {
+  margin: 0;
+}
+
+.graph-legend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.graph-legend .title {
+  color: #423D3D;
+  margin-bottom: 4px;
+}
+
+.graph-legend .income {
+  width: 100%;
+  color: #38B9A9;
+}
+
+.graph-legend .expense {
+  width: 100%;
+  color: #E88A33;
+}
+
+.graph-box {
+  width: 90%;
+  margin: 24px auto 0 auto;
+}
+
+.graph {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7B7B7B;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.graph .graph-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+
+.graph .graph-group .graph-bar-shadow {
+  width: 38px;
+  height: 160px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+}
+
+.graph .graph-group .graph-bar-shadow .graph-value {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+  position: absolute;
+  margin: auto;
+}
+
+.graph .graph-group .graph-bar {
+  width: 38px;
+  height: 160px;
+  position: absolute;
+  border-radius: 4px 4px 0 0;
+  bottom: 0;
+}
+
+.graph-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #7B7B7B;
+  font-size: 12px;
+}
+
+.graph-label p {
+  width: 100%;
+  text-align: center;
+}
+/*# sourceMappingURL=graph.css.map */
