@@ -3,7 +3,6 @@ import Navbar from '../../component/navbar/Navbar'
 import Headbar from '../../component/headbar/Headbar'
 import WalletItems from '../../component/content/WalletItems'
 import TransactionItems from '../../component/content/TransactionItems'
-import Wallets from '../Wallets'
 import {Link} from "react-router-dom";
 function home() {
   return (
@@ -26,10 +25,10 @@ function home() {
             <div className="context-body">
               <div className="title-box">
                 <p className='title'>My Wallets</p>
-                <Link to="/Reports" className="link-text">See all</Link> 
+                <Link to="/Wallets" className="link-text">See all</Link> 
               </div>
               <div className="dash-line"></div>
-              <div className="context-items">
+              <div className="context-items home">
                 <WalletItems/>
                 <WalletItems/>
                 <WalletItems/>

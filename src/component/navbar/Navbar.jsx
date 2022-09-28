@@ -7,6 +7,7 @@ import addTransactionOff from '../../asstes/icons/add-transaction-off.png'
 import addTransactionOn from '../../asstes/icons/add-transaction-on.png'
 import profileOff from '../../asstes/icons/profile-off.png'
 import profileOn from '../../asstes/icons/profile-on.png'
+import {Link} from "react-router-dom";
 
 
 function Navbar() {
@@ -22,34 +23,41 @@ function Navbar() {
       setTransaction(transactionOff)
       setAdd(addTransactionOff)
       setProfile(profileOff)
+      window.location.href = '/'
     } else if ( index === 2 ) {
       setHome(homeOff)
       setTransaction(transactionOn)
       setAdd(addTransactionOff)
       setProfile(profileOff)
+      window.location.href = '/'
     } else if ( index === 3 ) {
       setHome(homeOff)
       setTransaction(transactionOff)
       setAdd(addTransactionOn)
       setProfile(profileOff)
+      window.location.href = '/'
     } else if ( index === 4 ) {
       setHome(homeOff)
       setTransaction(transactionOff)
       setAdd(addTransactionOff)
       setProfile(profileOn)
+      window.location.href = '/'
     }
   }
 
   return (
     <div className='navbar'>
-        <div 
-          className="navbar-btn" 
-          onClick={() => navbarButton(1)}>
+        
+        {/* <Link> */}
+          <div 
+            className="navbar-btn" 
+            onClick={() => navbarButton(1)}>
 
-            <img src={home} alt="" />
-            <p>Home</p>
+              <img src={home} alt="" />
+              <p>Home</p>
 
-        </div>
+          </div>
+        {/* </Link> */}
         <div 
           className="navbar-btn" 
           onClick={() => navbarButton(2)}>

@@ -1,3 +1,10 @@
+.items-content {
+  display: -ms-grid;
+  display: grid;
+  gap: 8px;
+      grid-template-areas: auto;
+}
+
 .items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,7 +15,6 @@
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   width: 100%;
-  cursor: pointer;
 }
 
 .items p {
@@ -55,11 +61,12 @@
   font-size: 12px;
 }
 
-.items:hover {
+.home .items:hover {
   background-color: #f0f0f0ad;
   border-radius: 8px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  cursor: pointer;
 }
 
 .group {

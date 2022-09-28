@@ -1,6 +1,7 @@
 .link-text {
     text-decoration: none;
 }
+
 .card {
     min-height: 60px;
     width: 100%;
@@ -29,6 +30,10 @@
         color: #7B7B7B;
         font-size: 12px;
     }
+    .title.bold {
+        font-weight: 600;
+        color: #423D3D;
+    }
     .link-text {
         order: 2;
         margin: 0;
@@ -36,6 +41,18 @@
         font-size: 12px;
         color: #38B9A9;
         cursor: pointer;
+    }
+    .dropdown {
+        order: 2;
+        margin: 0;
+        margin-left: auto;
+        border: none;
+        background-color: transparent;
+        font-size: 12px;
+        color: #423D3D;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        outline: none;
     }
 }
 .card.context { margin-top: 14px; width: 100%;}

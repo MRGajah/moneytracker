@@ -1,10 +1,16 @@
+.items-content {
+    display: grid;
+    gap: 8px;
+    // grid-template-columns: auto;
+    grid-template-areas: auto;
+    // grid-template-rows: auto;
+}
 .items {
     display: flex;
     align-items: center;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     width: 100%;
-    cursor: pointer;
     p {
         margin: 0;
     }
@@ -38,10 +44,13 @@
         font-size: 12px;
     }
 }
-.items:hover {
-    background-color: #f0f0f0ad;
-    border-radius: 8px;
-    transition: 0.4s;
+.home{
+    .items:hover {
+        background-color: #f0f0f0ad;
+        border-radius: 8px;
+        transition: 0.4s;
+        cursor: pointer;
+    }   
 }
 .group {
     position: relative;
