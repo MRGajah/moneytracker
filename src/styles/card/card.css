@@ -72,6 +72,7 @@
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   outline: none;
+  text-align: right;
 }
 
 .card.context {
@@ -164,5 +165,72 @@
 
 .card.banner .mini-info p {
   margin: 0;
+}
+
+.card.banner-wallet-info .category-value {
+  margin-left: 6px;
+}
+
+.card.banner-wallet-info p {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+  color: #7B7B7B;
+}
+
+.card.banner-wallet-info p.balance-title {
+  color: #FFC107;
+}
+
+.card.banner-wallet-info p.balance-amount {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card.banner-wallet-info p.info-title {
+  margin: 12px 0 8px 0;
+}
+
+.card.banner-wallet-info p.income-amount {
+  color: #38B9A9;
+  margin-top: 4px;
+}
+
+.card.banner-wallet-info p.expense-amount {
+  color: #E88A33;
+  margin-top: 4px;
+}
+
+.card-info {
+  min-height: 32px;
+  width: 100%;
+  background-color: #fff;
+  font-family: 'Inter', sans-serif;
+  color: #423D3D;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+}
+
+.card-info.text {
+  padding: 0 8px 0 12px;
+}
+
+.card-info.icon-card-info {
+  padding: 8px;
+}
+
+.card-info.fit-content {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 /*# sourceMappingURL=card.css.map */

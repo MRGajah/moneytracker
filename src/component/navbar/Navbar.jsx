@@ -7,7 +7,6 @@ import addTransactionOff from '../../asstes/icons/add-transaction-off.png'
 import addTransactionOn from '../../asstes/icons/add-transaction-on.png'
 import profileOff from '../../asstes/icons/profile-off.png'
 import profileOn from '../../asstes/icons/profile-on.png'
-import {Link} from "react-router-dom";
 
 
 function Navbar() {

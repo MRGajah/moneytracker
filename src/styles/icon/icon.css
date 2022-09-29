@@ -1,0 +1,52 @@
+.icon {
+  border-radius: 4px;
+  min-width: 16px;
+  min-height: 16px;
+  background-color: #D9D9D9;
+}
+
+.icon-rounded {
+  border-radius: 50%;
+  min-width: 16px;
+  min-height: 16px;
+}
+
+.icon-wallet-detail {
+  width: 42px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.icon-category {
+  width: 26px;
+  height: 26px;
+}
+
+.icon-category.up {
+  rotate: 180deg;
+}
+
+.icon-info {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+/*# sourceMappingURL=icon.css.map */

@@ -4,6 +4,7 @@ import './styles/style.css';
 import Wallets from "./pages/Wallets";
 import Reports from "./pages/Reports";
 import WalletDetail from "./pages/WalletDetail";
+import Transaction from "./pages/Transaction";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path='/Wallets' element={<Wallets/>}/>
       <Route path='/Reports' element={<Reports/>}/>
       <Route path='/WalletDetail' element={<WalletDetail/>}/>
+      <Route path='/Transaction' element={<Transaction/>}/>
     </Routes>
   );
 }
