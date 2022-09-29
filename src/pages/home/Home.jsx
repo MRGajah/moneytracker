@@ -1,13 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../../component/navbar/Navbar'
 import Headbar from '../../component/headbar/Headbar'
 import WalletItems from '../../component/content/WalletItems'
 import TransactionItems from '../../component/content/TransactionItems'
-import {Link} from "react-router-dom";
-function home() {
+import {useNavigate} from "react-router-dom";
+function Home() {
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    document.title = "Home";  
+    backButton();
+  }, []);
+
+  const backButton = () => {
+  }
+
   return (
     <div className='body'>
-        <Headbar/>
+        <Headbar editTarget="" home="none" title="Home" edit="none"/>
 
         <div className="container">
 
@@ -25,13 +36,13 @@ function home() {
             <div className="context-body">
               <div className="title-box">
                 <p className='title'>My Wallets</p>
-                <Link to="/Wallets" className="link-text">See all</Link> 
+                <p onClick={()=>navigate(`/Wallets`)} className="link-text">See all</p> 
               </div>
               <div className="dash-line"></div>
               <div className="context-items home">
-                <WalletItems/>
-                <WalletItems/>
-                <WalletItems/>
+                <WalletItems id="1"/>
+                <WalletItems id="2"/>
+                <WalletItems id="3"/>
               </div>
             </div>
           </div>
@@ -48,7 +59,7 @@ function home() {
           <div className="content">
             <div className="card-title-box">
               <p className="title">Trail Report</p>
-              <Link to="/Reports" className="link-text">See detail</Link> 
+              <p onClick={()=>navigate(`/Reports`)} className="link-text">See detaill</p>
               {/* <p className="link-text">See detail</p> */}
             </div>
             <div className="card">
@@ -133,4 +144,4 @@ function home() {
   )
 }
 
-export default home
+export default Home

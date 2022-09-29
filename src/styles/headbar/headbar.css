@@ -16,7 +16,11 @@
 
 .headbar p {
   font-family: 'Inter', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   color: #423D3D;
+}
+
+.headbar .headbar-right-content {
+  font-size: 14px;
 }
 /*# sourceMappingURL=headbar.css.map */

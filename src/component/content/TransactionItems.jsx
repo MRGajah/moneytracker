@@ -1,8 +1,10 @@
 import React from 'react'
+import {useNavigate} from "react-router-dom";
 
-function TransactionItems() {
+function TransactionItems(props) {
+  const navigate = useNavigate();
   return (
-    <div className='items'>
+    <div className='items' onClick={()=>navigate(`/Transaction/` + props.id)}>
         <div className="icon"></div>
         <div className="transaction-title">
             <p className="title">Category Title</p>

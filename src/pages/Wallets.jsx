@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../component/navbar/Navbar'
 import Headbar from '../component/headbar/Headbar'
 import WalletItems from '../component/content/WalletItems'
-import {Link} from "react-router-dom";
 
 function Wallets() {
+  useEffect(() => {
+    document.title = "Wallet";  
+  }, []);
+  
   return (
     <div className='body'>
-        <Headbar/>
+        <Headbar editTarget="" home="No" title="Wallet" edit="none"/>
 
         <div className="container">
 
@@ -29,21 +32,15 @@ function Wallets() {
               </select>
             </div>
             <div className="items-content">
-                <Link to="/WalletDetail" className="link-text">
-                    <div className="card">
-                        <WalletItems/>
-                    </div>
-                </Link>
-                <Link to="/WalletDetail" className="link-text">
-                    <div className="card">
-                        <WalletItems/>
-                    </div>
-                </Link>
-                <Link to="/WalletDetail" className="link-text">
-                    <div className="card">
-                        <WalletItems/>
-                    </div>
-                </Link>
+              <div className="card">
+                  <WalletItems id="1"/>
+              </div>
+              <div className="card">
+                  <WalletItems id="2"/>
+              </div>
+              <div className="card">
+                  <WalletItems id="3"/>
+              </div>
             </div>
           </div>
         </div>

@@ -106,21 +106,15 @@ function WalletDetail() {
               </select>
             </div>
             <div className="items-content">
-                <Link to="/Transaction" className="link-text">
-                    <div className="card">
-                        <TransactionItems/>
-                    </div>
-                </Link>
-                <Link to="/Transaction" className="link-text">
-                    <div className="card">
-                        <TransactionItems/>
-                    </div>
-                </Link>
-                <Link to="/Transaction" className="link-text">
-                    <div className="card">
-                        <TransactionItems/>
-                    </div>
-                </Link>
+              <div className="card">
+                  <TransactionItems id="1"/>
+              </div>
+              <div className="card">
+                  <TransactionItems id="2"/>
+              </div>
+              <div className="card">
+                  <TransactionItems id="3"/>
+              </div>
             </div>
           </div>
         </div>

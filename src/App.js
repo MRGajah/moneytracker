@@ -13,8 +13,8 @@ function App() {
       <Route path='*' element={<Home/>}/>
       <Route path='/Wallets' element={<Wallets/>}/>
       <Route path='/Reports' element={<Reports/>}/>
-      <Route path='/WalletDetail' element={<WalletDetail/>}/>
-      <Route path='/Transaction' element={<Transaction/>}/>
+      <Route path='/WalletDetail/:id' element={<WalletDetail/>}/>
+      <Route path='/Transaction/:id' element={<Transaction/>}/>
     </Routes>
   );
 }
