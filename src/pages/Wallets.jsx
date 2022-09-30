@@ -10,7 +10,7 @@ function Wallets() {
   
   return (
     <div className='body'>
-        <Headbar editTarget="" home="No" title="Wallet" edit="none"/>
+        <Headbar editTarget="" home="" title="Wallet" edit="none"/>
 
         <div className="container">
 

@@ -21,7 +21,6 @@ div.flex-container .right-content {
       -ms-flex-order: 2;
           order: 2;
   margin-left: auto;
-  cursor: pointer;
 }
 
 div.flex-container .content {

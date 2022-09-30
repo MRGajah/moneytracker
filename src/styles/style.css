@@ -47,3 +47,6 @@ select{
     font-weight: 400;
     text-align: right;
 }
+.dash-line-transaction {
+    margin: 8px 0 12px 0;
+}

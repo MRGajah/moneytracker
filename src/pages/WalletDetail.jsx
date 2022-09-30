@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from '../component/navbar/Navbar'
 import Headbar from '../component/headbar/Headbar'
-import { Link } from 'react-router-dom'
 import TransactionItems from '../component/content/TransactionItems'
 
 
@@ -11,7 +10,7 @@ import arrow from '../asstes/icons/arrow.png'
 function WalletDetail() {
   return (
     <div className='body'>
-        <Headbar title="Wallet Detail"/>
+        <Headbar editTarget="" home="" title="Wallet detail" edit=""/>
 
         <div className="container">
 
@@ -107,13 +106,13 @@ function WalletDetail() {
             </div>
             <div className="items-content">
               <div className="card">
-                  <TransactionItems id="1"/>
+                  <TransactionItems id="1" categoryColor="#38B9A9"/>
               </div>
               <div className="card">
-                  <TransactionItems id="2"/>
+                  <TransactionItems id="2" categoryColor="#38B9A9"/>
               </div>
               <div className="card">
-                  <TransactionItems id="3"/>
+                  <TransactionItems id="3" categoryColor="#38B9A9"/>
               </div>
             </div>
           </div>

@@ -233,4 +233,59 @@
   width: -moz-fit-content;
   width: fit-content;
 }
+
+.card.transaction-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #7B7B7B;
+}
+
+.card.transaction-info .headbar-transaction p {
+  font-size: 12px;
+}
+
+.card.transaction-info .headbar-transaction p.title {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.card.transaction-info p.balance-title {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card.transaction-info p.balance-amount {
+  margin-top: 4px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card-note {
+  width: 100%;
+  padding: 8px;
+  min-height: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: rgba(217, 217, 217, 0.2);
+  position: relative;
+  text-align: Left;
+  border-radius: 4px;
+  margin: 24px 0 16px 0;
+}
+
+.card-note p {
+  font-size: 12px;
+  color: #7B7B7B;
+  font-weight: 500;
+}
+
+.transaction-items {
+  margin-top: 16px;
+  margin: 16px 0 24px 0;
+  display: -ms-grid;
+  display: grid;
+  gap: 12px;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+}
 /*# sourceMappingURL=card.css.map */
